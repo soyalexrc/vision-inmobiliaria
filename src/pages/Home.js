@@ -1,8 +1,10 @@
-import Page from '../components/Page'
+import Page from '../components/common/Page'
 import {styled} from "@mui/material/styles";
 import Searcher from "../components/Searcher";
 import banner from '../assets/img/banner-example.jpg'
-import {Box} from "@mui/material";
+import {Box, Button, Typography} from "@mui/material";
+import AboutUs from "../components/home/AboutUs";
+import WhereToFindUs from "../components/home/WhereToFindUs";
 
 const APP_BAR_MOBILE = 64;
 const APP_BAR_DESKTOP = 88;
@@ -29,6 +31,14 @@ export default function Home() {
         <Box component='img' sx={{ position: 'absolute', zIndex: '-1', filter: 'grayscale(50%)', height: '100%', width: '100%' }} src={banner} loading='lazy' alt=""/>
         <Searcher/>
       </Box>
+
+      <Box sx={{ textAlign: 'center', py: 5, backgroundColor: theme => theme.palette.secondary.main}}>
+        <Typography variant='h2' color='#fff' sx={{ mb: 2 }}>Mira que propiedades han bajado de precio este mes!</Typography>
+        <Button variant='contained' color='primary' sx={{ color: '#fff' }}>Ver propiedades!</Button>
+      </Box>
+
+      <AboutUs />
+      <WhereToFindUs />
     </RootStyle>
   )
 }

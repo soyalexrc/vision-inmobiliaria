@@ -1,5 +1,5 @@
 import Router from "./routes";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./components/common/ScrollToTop";
 import ThemeConfig from "./theme";
 import GlobalStyles from "./theme/globalStyles";
 import {ProgressBarStyle} from "./components/common/LoadingScreen";
