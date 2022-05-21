@@ -49,6 +49,7 @@ export default function Router() {
         {path: '', element: <Home/>},
         {path: 'servicios', element: <Services/>},
         {path: 'asesores', element: <Advisers/>},
+        {path: 'asesores/:adviser', element: <AdvisersDetail/>},
         {path: 'alquiler', element: <Rent/>},
         {path: 'alquiler/:slug', element: <RentDetail/>},
         {path: 'compra', element: <Sell/>},
@@ -78,7 +79,8 @@ const SellDetail = Loadable(lazy(() => import('../pages/sell/Detail')))
 const Blog = Loadable(lazy(() => import('../pages/blog/Blog')))
 const Post = Loadable(lazy(() => import('../pages/blog/Post')))
 const Contact = Loadable(lazy(() => import('../pages/Contact')))
-const Advisers = Loadable(lazy(() => import('../pages/Advisers')))
+const Advisers = Loadable(lazy(() => import('../pages/advisers/Advisers')))
+const AdvisersDetail = Loadable(lazy(() => import('../pages/advisers/Detail')))
 
 //auth
 // const Login = Loadable(lazy(() => import('../pages/auth/Login')))

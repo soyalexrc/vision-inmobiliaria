@@ -68,6 +68,10 @@ export default function GlobalStyles() {
         '.blur-up.lazyloaded ': {
           WebkitFilter: 'blur(0)',
           filter: 'blur(0)'
+        },
+        '.google-map-container' : {
+          width: '100%',
+          height: '500px'
         }
       }}
     />

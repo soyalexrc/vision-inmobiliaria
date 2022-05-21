@@ -136,6 +136,8 @@ function CarouselItem({item}) {
   );
 }
 
+
+
 export default function FeaturedCarousel({arr}) {
   const carouselRef = useRef();
   const theme = useTheme();
@@ -143,9 +145,10 @@ export default function FeaturedCarousel({arr}) {
   const settings = {
     dots: true,
     slidesToShow: 4,
-    infinite: false,
-    // centerMode: true,
-    // centerPadding: "60px",
+    infinite: true,
+    autoplay: true,
+    autoplayTimer: 2000,
+    slidesToScroll: 1,
     rtl: Boolean(theme.direction === "rtl"),
     responsive: [
       {
@@ -174,6 +177,7 @@ export default function FeaturedCarousel({arr}) {
           <CarouselItem key={item + i}/>
         ))}
       </Slider>
+
     </RootStyle>
   );
 }

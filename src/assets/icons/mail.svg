@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="Grupo_6162" data-name="Grupo 6162" transform="translate(0 0)">
+    <g id="Rectángulo_1593" data-name="Rectángulo 1593" transform="translate(0 0)" fill="#fff" stroke="#70a31c" stroke-width="1">
+      <rect width="22" height="22" rx="6" stroke="none"/>
+      <rect x="0.5" y="0.5" width="21" height="21" rx="5.5" fill="none"/>
+    </g>
+    <path id="Icon_ionic-md-mail" data-name="Icon ionic-md-mail" d="M12.85,5.625H3.366A1.119,1.119,0,0,0,2.25,6.741v6.974A1.119,1.119,0,0,0,3.366,14.83H12.85a1.119,1.119,0,0,0,1.116-1.116V6.741A1.119,1.119,0,0,0,12.85,5.625ZM12.71,8l-4.6,3.068L3.505,8V6.88l4.6,3.068,4.6-3.068Z" transform="translate(2.75 0.772)" fill="#93d500"/>
+  </g>
+</svg>
