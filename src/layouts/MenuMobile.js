@@ -23,7 +23,7 @@ import {
 } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 // mantenedorAdmin
-import Logo from "../logo.svg";
+import Logo from "../assets/img/logo.png";
 import NavSection from "../components/NavSection";
 import Scrollbar from "../components/Scrollbar";
 import {MIconButton} from "../components/@material-extend";
@@ -209,9 +209,9 @@ export default function MenuMobile({isOffset, isHome, navConfig}) {
         PaperProps={{sx: {pb: 1, width: '100vw'}}}
       >
         <Scrollbar>
-          <Box sx={{display: 'flex', alignItems: 'center'}}>
-            <Link component={RouterLink} to="/" sx={{display: "inline-flex"}}>
-              <img src={Logo} alt=""/>
+          <Box sx={{display: 'flex', alignItems: 'center', p: 3}}>
+            <Link component={RouterLink} to="/" sx={{display: "inline-flex", mr: 2}}>
+              <img src={Logo} alt="vision inmobiliaria logo" width={100} />
             </Link>
             <TextField
               id="search"
