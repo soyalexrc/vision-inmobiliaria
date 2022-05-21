@@ -47,6 +47,15 @@ export default function Router() {
       ),
       children: [
         {path: '', element: <Home/>},
+        {path: 'servicios', element: <Services/>},
+        {path: 'asesores', element: <Advisers/>},
+        {path: 'alquiler', element: <Rent/>},
+        {path: 'alquiler/:slug', element: <RentDetail/>},
+        {path: 'compra', element: <Sell/>},
+        {path: 'compra/:slug', element: <SellDetail/>},
+        {path: 'blog', element: <Blog/>},
+        {path: 'blog/:slug', element: <Post/>},
+        {path: 'contacto', element: <Contact/>},
       ]
     },
     // {
@@ -61,6 +70,15 @@ export default function Router() {
 }
 
 const Home = Loadable(lazy(() => import('../pages/Home')))
+const Services = Loadable(lazy(() => import('../pages/Services')))
+const Rent = Loadable(lazy(() => import('../pages/rent/Rent')))
+const RentDetail = Loadable(lazy(() => import('../pages/rent/Detail')))
+const Sell = Loadable(lazy(() => import('../pages/sell/Sell')))
+const SellDetail = Loadable(lazy(() => import('../pages/sell/Detail')))
+const Blog = Loadable(lazy(() => import('../pages/blog/Blog')))
+const Post = Loadable(lazy(() => import('../pages/blog/Post')))
+const Contact = Loadable(lazy(() => import('../pages/Contact')))
+const Advisers = Loadable(lazy(() => import('../pages/Advisers')))
 
 //auth
 // const Login = Loadable(lazy(() => import('../pages/auth/Login')))

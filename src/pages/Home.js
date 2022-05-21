@@ -2,12 +2,16 @@ import Page from '../components/common/Page'
 import {styled} from "@mui/material/styles";
 import Searcher from "../components/Searcher";
 import banner from '../assets/img/banner-example.jpg'
-import {Box, Button, Typography} from "@mui/material";
+import {Box, Button, Container, Typography} from "@mui/material";
 import AboutUs from "../components/home/AboutUs";
 import WhereToFindUs from "../components/home/WhereToFindUs";
+import FeaturedCarousel from "../components/carousel/FeaturedCarousel";
 
 const APP_BAR_MOBILE = 64;
 const APP_BAR_DESKTOP = 88;
+const arr = [
+  {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {},
+]
 
 const RootStyle = styled(Page)(({theme}) => ({
   height: "100%",
@@ -36,6 +40,10 @@ export default function Home() {
         <Typography variant='h2' color='#fff' sx={{ mb: 2 }}>Mira que propiedades han bajado de precio este mes!</Typography>
         <Button variant='contained' color='primary' sx={{ color: '#fff' }}>Ver propiedades!</Button>
       </Box>
+
+      <Container sx={{ my: 5 }}>
+        <FeaturedCarousel arr={arr} />
+      </Container>
 
       <AboutUs />
       <WhereToFindUs />
