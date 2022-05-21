@@ -37,7 +37,7 @@ function CarouselItem({ item }) {
 export default function CarouselBasic2() {
   const theme = useTheme();
   const carouselRef = useRef();
-  const [currentIndex, setCurrentIndex] = useState(2);
+  const [currentIndex, setCurrentIndex] = useState(1);
 
   const settings = {
     dots: false,
