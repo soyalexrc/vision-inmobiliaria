@@ -5,7 +5,7 @@ import {AppBar, Box, IconButton, Toolbar} from "@mui/material";
 // hooks
 import useOffSetTop from "../hooks/useOffsetTop";
 // mantenedorAdmin
-import Logo from "../logo.svg";
+import Logo from "../assets/img/logo.png";
 import {MHidden} from "../components/@material-extend";
 //
 import MenuDesktop from "./MenuDesktop";
@@ -72,7 +72,7 @@ export default function MainNavbar() {
           }}
         >
           <RouterLink to="/">
-            <img src={Logo} alt=""/>
+            <img src={Logo} alt="vision inmobiliaria logo" width={100}/>
           </RouterLink>
 
           <Box sx={{flexGrow: 1}}/>
