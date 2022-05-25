@@ -5,14 +5,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom";
 import {HelmetProvider} from "react-helmet-async";
+import {AlertProvider} from "./context/Alertcontext";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <HelmetProvider>
-      <BrowserRouter>
-        <App/>
-      </BrowserRouter>
+      <AlertProvider>
+        <BrowserRouter>
+          <App/>
+        </BrowserRouter>
+      </AlertProvider>
     </HelmetProvider>
   </React.StrictMode>
 );

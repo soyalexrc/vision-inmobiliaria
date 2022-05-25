@@ -54,8 +54,8 @@ export default function Router() {
         {path: 'alquiler/:slug', element: <RentDetail/>},
         {path: 'compra', element: <Sell/>},
         {path: 'compra/:slug', element: <SellDetail/>},
-        {path: 'blog', element: <Blog/>},
-        {path: 'blog/:slug', element: <Post/>},
+        {path: 'blog', element: <ComingSoon/>},
+        {path: 'blog/:slug', element: <ComingSoon/>},
         {path: 'contacto', element: <Contact/>},
       ]
     },
