@@ -7,8 +7,9 @@ import ws from '../assets/icons/ws.webp';
 import AboutUs from "../components/home/AboutUs";
 import WhereToFindUs from "../components/home/WhereToFindUs";
 import FeaturedCarousel from "../components/carousel/FeaturedCarousel";
-import CustomGoogleMap from "../components/home/CustomGoogleMap";
 import FeaturesAdvertisers from "../components/advertisers/FeaturesAdvertisers";
+import ContactForm from "../components/forms/ContactForm";
+import ServicesWidget from "../components/home/ServicesWidget";
 
 const APP_BAR_MOBILE = 64;
 const APP_BAR_DESKTOP = 88;
@@ -57,6 +58,7 @@ export default function Home() {
       </Container>
 
       <AboutUs/>
+      <ServicesWidget />
       <Box sx={{textAlign: 'center', py: 5, backgroundColor: theme => theme.palette.secondary.main}}>
         <Typography variant='h2' color='#fff' sx={{mb: 2}}>Mira que propiedades han bajado de precio este
           mes!</Typography>
@@ -79,6 +81,7 @@ export default function Home() {
         }}
       />
       <WhereToFindUs/>
+      <ContactForm />
     </RootStyle>
   )
 }

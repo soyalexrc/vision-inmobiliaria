@@ -8,8 +8,8 @@ export default function RegularAdvertisers() {
   return (
     <Grid container spacing={2} sx={{ my: 5 }}>
       {
-        [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16].map((el, i) => (
-          <Grid key={el + 1} item xs={12} md={3}>
+        [1,2,3,4,5,6,7,8,9,10].map((el, i) => (
+          <Grid key={el + i} item xs={12} md={3}>
             <Paper
               onClick={() => navigate('/asesores/nombre-de-asesor')}
               elevation={2}
